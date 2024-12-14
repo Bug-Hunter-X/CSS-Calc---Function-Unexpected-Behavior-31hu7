@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+.container {
+  display: flex;
+  width: 500px; /* Explicit width for the container */
+}
+
+.item {
+  flex: 1;
+  background-color: lightblue;
+  /*Corrected Calculation*/
+  margin: 10px;
+  padding: 10px;
+}
+
+/*Avoid mixing units in calc() */
+.item2 {
+  width: calc(25% - 20px);
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 10px;
+} 
